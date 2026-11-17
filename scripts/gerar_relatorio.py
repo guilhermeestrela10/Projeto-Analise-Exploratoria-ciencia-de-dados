@@ -144,7 +144,7 @@ def main():
         canvas.line(50, 40, 545, 40)
         canvas.setFont('Helvetica', 8)
         canvas.setFillColor(colors.HexColor('#405B80'))
-        canvas.drawString(50, 27, 'Grupo 04 | Rascunho técnico - autoria humana pendente')
+        canvas.drawString(50, 27, 'Grupo 04 | Gestão de Vendedores Parceiros')
         canvas.drawRightString(545, 27, str(doc.page))
 
     SimpleDocTemplate(str(pdf), pagesize=A4, rightMargin=50, leftMargin=50, topMargin=48, bottomMargin=55, invariant=1,
