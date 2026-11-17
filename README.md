@@ -3,9 +3,10 @@
 Centro Universitário Santo Agostinho (UNIFSA) - Bacharelado em Engenharia de Software.
 Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefing 5: Gestão de Vendedores Parceiros.
 
-**Entrega em preparação:** implementação e evidências técnicas assistidas por IA. Sumário executivo,
-justificativas do diário, respostas de negócio e conclusões precisam ser escritos pelos integrantes,
-conforme seção 7.1 do PDF. Publicação e revisão humana não devem ser presumidas.
+**Entrega em preparação:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
+vieram do solicitante, com revisão factual autorizada. Justificativas do diário, conclusão técnica,
+pesquisas e validação dos demais integrantes continuam pendentes, conforme seção 7.1 do PDF.
+O GitHub está publicado; o painel Community Cloud ainda não foi publicado.
 
 ## Integrantes e frentes propostas
 

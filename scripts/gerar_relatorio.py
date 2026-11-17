@@ -86,7 +86,7 @@ def main():
     paragraph('Guilherme Estrela · David Gabriel · Carlos Gabriel Raposo · Roger')
     story.append(Spacer(1, 24))
     paragraph('RASCUNHO TÉCNICO - PARTES AUTORAIS PENDENTES', 'Heading2')
-    paragraph('Implementação e evidências técnicas assistidas por IA. Este PDF ainda não é uma entrega acadêmica final. A equipe deve redigir o sumário executivo, as justificativas do diário, respostas de negócio e conclusões, conforme seção 7.1 do documento oficial.')
+    paragraph('Implementação e evidências técnicas assistidas por IA. As respostas e o sumário foram integrados a partir do texto fornecido pelo solicitante, com revisão factual autorizada. Este PDF ainda não é uma entrega acadêmica final: justificativas do diário, conclusão técnica, pesquisas e validação dos demais integrantes permanecem pendentes.')
     paragraph('Referência: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
     story.append(PageBreak())
     paragraph('Parte A - Sumário executivo', 'Heading1')
@@ -128,7 +128,7 @@ def main():
     section('10. Pipeline e reprodutibilidade', 'A função preprocessar recebe cinco DataFrames brutos e retorna a tabela final, com evidências em attrs["audit"]. O comando python scripts/executar_pipeline.py executa todas as etapas. Para demonstração: python scripts/executar_pipeline.py --input data/amostra_bruta --output work/demonstracao --sem-graficos. O segundo comando mantém a base do painel preservada. Dependências, comandos completos e testes estão no README e em reports/verificacao.md.')
     section('11. Limites e validação humana', 'Amostras com itens faltantes podem subestimar o número de vendedores e alterar prazos e valores agregados. O pipeline não recupera dados não fornecidos. Avaliações multivendedor não são atribuídas individualmente na análise principal. A última resposta não garante que a nota se refira apenas ao despacho. Intervalos de Wilson descrevem incerteza da taxa sob aproximação binomial, sem corrigir dependência temporal ou confundimento. Os dados são históricos; não representam o desempenho atual dos parceiros.')
     story.append(PageBreak())
-    heading('12. Seções a redigir pela equipe')
+    heading('12. Respostas recebidas e validações da equipe')
     # O texto abaixo vem do arquivo humano, preservado pelo gerador.
     markdown('## Resposta 1' + author_text.split('## Resposta 1', 1)[-1] if '## Resposta 1' in author_text else author_text)
     story.append(PageBreak())
