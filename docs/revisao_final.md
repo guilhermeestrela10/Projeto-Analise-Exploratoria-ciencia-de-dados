@@ -73,3 +73,7 @@ Prazo: 30/11/2026, 23h59 de Brasília. Apresentação: 02/12/2026, até dez minu
 - Monitoramento implementado: TAD > 10%, nota < 3,8, coorte dos últimos 30 dias da base filtrada, peso 1 por pedido avaliado e dias úteis sem feriados. Nenhum limite de tempo médio foi inventado.
 - O diário recebeu contagens e operações implementadas, mantendo justificativas humanas pendentes. Não foram fabricadas decisões de reuniões do grupo.
 - A automação do navegador foi interrompida porque não conseguiu determinar a URL com segurança. Community Cloud continua pendente; nenhum link de aplicativo publicado foi inventado.
+
+## Link do painel informado pelo proprietário
+
+[Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O domínio respondeu HTTP 200 nesta verificação. O cliente automático recebeu a interface de carregamento do Community Cloud, não os indicadores do aplicativo. Portanto, a validação funcional externa, inclusive acesso anônimo e filtros, permanece pendente.

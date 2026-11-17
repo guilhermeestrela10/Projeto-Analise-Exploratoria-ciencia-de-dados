@@ -6,7 +6,7 @@ Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefin
 **Entrega em preparação:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
 vieram do solicitante, com revisão factual autorizada. Justificativas do diário, conclusão técnica,
 pesquisas e validação dos demais integrantes continuam pendentes, conforme seção 7.1 do PDF.
-O GitHub está publicado; o painel Community Cloud ainda não foi publicado.
+O GitHub está publicado. O proprietário informou o link do painel Community Cloud; a validação funcional externa ainda precisa ser concluída.
 
 ## Integrantes e frentes propostas
 
@@ -171,7 +171,7 @@ Para conferir os campos autorais ainda vazios, execute:
 
 Esse comando aponta pendências textuais e retorna código 1 enquanto existirem campos não preenchidos.
 Ele não comprova autoria, aprovação humana ou publicação. O detalhamento da segunda revisão está em `docs/revisao_final.md`.
-O workflow GitHub Actions foi preparado para executar testes a cada push; sua execução remota só pode ser confirmada após publicar.
+O workflow GitHub Actions executa testes a cada push. A execução remota documentada aprovou 33 testes; resultado em `reports/verificacao.md`.
 As próximas alterações feitas pelo assistente devem seguir o fluxo testar, revisar, commit e push registrado em AGENTS.md.
 
 As três respostas foram fornecidas pelo solicitante e receberam revisão factual expressamente autorizada. Os originais estão em `reports/respostas_recebidas.md`; os textos integrados estão no painel e na Parte A. As justificativas do diário, conclusão técnica, pesquisas e validação dos demais integrantes continuam pendentes.
@@ -179,7 +179,7 @@ Desafios técnicos: granularidade de itens/avaliações, ausência de despacho p
 Consultar `docs/apresentacao.md`, `docs/publicacao.md` e `docs/auditoria_rubrica.md`.
 
 Repositório público: [Projeto-Analise-Exploratoria-ciencia-de-dados](https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados). Nome: `Projeto-Analise-Exploratoria-ciencia-de-dados`.
-Painel Streamlit Community Cloud: **pendente de publicação e teste do link**.
+Painel Streamlit Community Cloud: [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). Link fornecido pelo proprietário; domínio respondeu HTTP 200, mas a validação funcional externa ainda está pendente.
 O CSV deve ficar abaixo de 100 MB. O pipeline verifica esse limite e não remove linhas para reduzi-lo.
 Antes de entregar: revisão da equipe, textos autorais, commits reais dos quatro integrantes, repositório público,
 painel acessível e envio do PDF e dos dois links pela plataforma A da disciplina.
@@ -191,4 +191,4 @@ painel acessível e envio do PDF e dos dois links pela plataforma A da disciplin
 [Scikit-Learn - pré-processamento](https://scikit-learn.org/stable/modules/preprocessing.html).
 Consultas de APIs de Pandas e Streamlit realizadas com Context7 em 17/11/2026.
 
-Atualização de publicação: repositório público criado e primeiro push confirmado. O painel Community Cloud ainda não foi publicado. A automação do navegador foi interrompida por não conseguir confirmar a URL com segurança.
+Atualização de publicação: repositório público sincronizado. O proprietário informou o painel https://wuevyectn67rbfng9xqssx.streamlit.app/ A consulta HTTP respondeu, mas retornou a interface de carregamento do serviço; indicadores, gráficos e filtros remotos ainda não foram confirmados por esta ferramenta.

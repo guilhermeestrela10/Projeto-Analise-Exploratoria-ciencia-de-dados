@@ -1,3 +1,14 @@
+# Link Community Cloud recebido - 17/11/2026
+
+- URL fornecida pelo proprietário: https://wuevyectn67rbfng9xqssx.streamlit.app/
+- Consultas a página inicial e rotas das três páginas responderam HTTP 200, com HTML da interface de carregamento do Community Cloud.
+- O endpoint /_stcore/health também retornou HTML, e não a resposta de saúde do aplicativo. Não foi usado como prova de que o código está funcionando remotamente.
+- A sessão de execução remota não foi confirmada pelo cliente de verificação. Não se afirma validação externa de indicadores, gráficos ou filtros.
+- Foi solicitado ao proprietário testar o acesso anônimo. O resultado deve ser registrado quando houver confirmação.
+- Os 33 testes locais/remotos do repositório e as demais pendências humanas permanecem conforme o histórico abaixo.
+
+---
+
 # Atualização final da segunda revisão - 17/11/2026
 
 - Repositório público confirmado: https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados.

@@ -34,3 +34,7 @@ Fonte: PDF oficial, página 5; anexos B/C/D nas páginas 11/12. A auditoria não
 Resultados e limitações dos testes estão em reports/verificacao.md. Os testes executam o código;
 não substituem autoria, validação crítica e apresentação humana. Não se declara cumprimento integral
 dos critérios com partes humanas ou publicação pendentes.
+
+## Link do painel informado pelo proprietário
+
+[Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O domínio respondeu HTTP 200 nesta verificação. O cliente automático recebeu a interface de carregamento do Community Cloud, não os indicadores do aplicativo. Portanto, a validação funcional externa, inclusive acesso anônimo e filtros, permanece pendente.

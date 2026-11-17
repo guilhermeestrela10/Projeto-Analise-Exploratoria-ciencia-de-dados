@@ -48,3 +48,7 @@ Na plataforma A da disciplina, enviar PDF, link GitHub e link Streamlit até **3
 Não há links fictícios. O estado efetivamente verificado de autenticação/publicação fica em `reports/verificacao.md`.
 
 Referências verificadas: [GitHub CLI - criar repositório](https://cli.github.com/manual/gh_repo_create), [limites de arquivos no GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github) e [deploy no Streamlit](https://docs.streamlit.io/deploy/streamlit-community-cloud/deploy-your-app).
+
+## Link do painel informado pelo proprietário
+
+[Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O domínio respondeu HTTP 200 nesta verificação. O cliente automático recebeu a interface de carregamento do Community Cloud, não os indicadores do aplicativo. Portanto, a validação funcional externa, inclusive acesso anônimo e filtros, permanece pendente.
