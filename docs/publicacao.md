@@ -2,32 +2,28 @@
 
 ## GitHub
 
-Nome solicitado: `Projeto-Analise-Exploratoria-ciencia-de-dados`. Visibilidade pública.
-Antes de publicar, conferir `uso_de_ia.md`, autoria humana e arquivos selecionados.
-Versionar código, notebook, requirements.txt, documentação, CSV final, metadados e relatório após preenchimento.
+Repositório público: https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados.
+O primeiro envio foi confirmado; a branch local `main` acompanha `origin/main`.
+Código, notebook, requirements.txt, documentação, CSV final, metadados e PDF técnico já estão no GitHub.
 Não versionar `.venv`, dados brutos, textos livres de avaliações, credenciais, caches ou work/.
 O PDF oficial é referência da disciplina; não é necessário redistribuí-lo em repositório público.
 
-Se o repositório ainda não existir, criar na conta do proprietário pelo GitHub e seguir os comandos exibidos lá.
-Antes do primeiro commit, executar `git status --short` e conferir o que será incluído.
 Usar mensagens com `[IA]` quando houver código assistido. Cada integrante deve fazer sua própria contribuição real.
 Não compartilhar credenciais nem simular commits dos colegas.
 
-O Git local já está inicializado na branch `main`, sem commits e sem remoto. Após a revisão humana,
-o proprietário pode executar na raiz (os comandos abaixo ainda não foram executados):
+Para próximas alterações, revisar os arquivos antes de selecionar o que será enviado:
 
 ```powershell
-gh auth login
-gh auth setup-git
-git add .
+git status --short
+git add caminho/do/arquivo
 git diff --cached --stat
-git commit -m "feat: projeto Olist Grupo04 [IA]"
-gh repo create Projeto-Analise-Exploratoria-ciencia-de-dados --public --source=. --remote=origin --push
+git commit -m "[IA] descrever a alteração feita"
+git push
 ```
 
 Conferir o conteúdo staged antes do commit: somente os arquivos listados na auditoria devem entrar.
-Se o repositório já tiver sido criado pela equipe, usar seu endereço real com `git remote add origin`
-e publicar com `git push -u origin main`; não recriar outro repositório.
+O assistente recebeu instrução para testar, revisar, criar commit e fazer push a cada conjunto de alterações feitas por ele.
+Essa regra está em AGENTS.md. Não foi instalado um serviço que envie arquivos editados fora das sessões.
 O CSV final ultrapassa o limite comum de upload pelo navegador; usar Git para enviar o arquivo de 38,37 MB.
 
 ## Streamlit Community Cloud
@@ -42,8 +38,9 @@ O CSV final ultrapassa o limite comum de upload pelo navegador; usar Git para en
 
 ## Relatório e envio
 
-O PDF técnico gerado tem indicação de rascunho. A equipe precisa escrever a Parte A,
-justificativas da Parte C, respostas do painel e conclusão técnica autoral antes da entrega.
+O PDF técnico gerado tem indicação de rascunho. A Parte A e as respostas do painel já foram integradas
+a partir dos textos do solicitante, com correções factuais autorizadas. Ainda faltam justificativas da Parte C,
+conclusão técnica, pesquisas e validação dos demais integrantes.
 Completar `reports/secoes_autorais.md`, `reports/diario_de_decisoes.md` e `reports/conclusoes_equipe.json`.
 Gerar novamente o PDF e revisar todas as páginas. A ferramenta incorpora os arquivos humanos existentes.
 Na plataforma A da disciplina, enviar PDF, link GitHub e link Streamlit até **30/11/2026, 23h59 de Brasília**.

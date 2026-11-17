@@ -14,13 +14,13 @@ Fonte: PDF oficial, página 5; anexos B/C/D nas páginas 11/12. A auditoria não
 
 ## Entregáveis e restrições
 
-- Repositório público com nome `Projeto-Analise-Exploratoria-ciencia-de-dados`: publicação pendente; conta conectada identificada, busca não encontrou o repositório solicitado.
+- Repositório público com nome `Projeto-Analise-Exploratoria-ciencia-de-dados`: publicado e confirmado na conta guilhermeestrela10; consultar README para o link.
 - Código, notebook, função de pipeline, CSV, dicionário, painel e requirements: preparados; execução verificada em reports/verificacao.md.
 - CSV final menor que 100 MB: tamanho e hash em data/processed/metadados.json; nenhuma linha foi removida para diminuir tamanho.
 - Registro de IA: uso_de_ia.md, três registros, marcadores nos arquivos Python, sem revisão humana fictícia.
 - Cinco tabelas: três obrigatórias e dois complementares; geolocation não utilizada.
 - Scikit-Learn exclusivamente pré-processamento; sem modelo de classificação ou previsão.
-- Relatório PDF: Partes A/B/C presentes; rascunho técnico, com campos humanos identificados. Ainda não é relatório final para entrega.
+- Relatório PDF: Partes A/B/C presentes; Parte A e respostas recebidas integradas com revisão autorizada. Justificativas e demais campos humanos continuam sinalizados; ainda não é relatório final para entrega.
 - Sumário executivo: seção reservada em uma página; equipe deve respeitar máximo de uma página ao preencher.
 - Dicionário Anexo C: todas as 41 colunas, origem, tipo, descrição e tratamento; correspondência de esquema validada pelo teste integrado.
 - Diário Anexo B: seis campos exigidos, evidências separadas; ampliar para todas as decisões efetivamente discutidas.

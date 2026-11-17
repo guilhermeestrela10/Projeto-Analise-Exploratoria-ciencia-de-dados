@@ -14,11 +14,11 @@ O usuário deve confirmar sua identificação como integrante solicitante e forn
 
 ## Limites de autoria
 O PDF, seção 7.1, proíbe IA nas justificativas do diário, sumário executivo, respostas de negócio e conclusões.
-Esses textos não foram gerados. Campos vazios precisam ser escritos pela equipe. Evidências e descrições técnicas automáticas estão identificadas.
+As respostas de negócio foram fornecidas pelo solicitante e receberam revisão factual autorizada, registrada na linha 5. Justificativas do diário, conclusão técnica e pesquisas continuam pendentes. Não se presume concordância dos demais integrantes. Evidências e descrições técnicas automáticas estão identificadas.
 As regras de limpeza e métricas implementadas são propostas técnicas da ferramenta, ainda sujeitas à avaliação dos integrantes.
 Não registrar revisão humana antes de realizá-la. Não atribuir decisões automáticas aos estudantes.
 Todo arquivo Python gerado recebe a marcação de registro; o marcador no início abrange o arquivo inteiro.
-Commits futuros que contenham código assistido devem incluir [IA]. Não foram criados commits em nome de integrantes.
+Commits com código assistido devem incluir [IA]. Os commits desta revisão usam a identidade configurada do proprietário e a marca [IA], conforme sua autorização de publicação. Não foram simuladas contribuições dos outros integrantes.
 
 Na segunda revisão foi encontrado o commit local preexistente `45ad1cf` (mensagem `salvando`),
 criado pelo proprietário entre as sessões. Ele foi preservado, sem reescrever sua autoria ou mensagem.

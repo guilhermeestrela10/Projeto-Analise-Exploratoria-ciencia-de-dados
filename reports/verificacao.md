@@ -1,3 +1,24 @@
+# Atualização final da segunda revisão - 17/11/2026
+
+- Repositório público confirmado: https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados.
+- Pushes confirmados; o histórico original do proprietário foi preservado.
+- Código verificado remotamente no commit 39e54e6: https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados/actions/runs/44185881745. Resultado: success.
+- Suíte local atual: 33 testes passaram em 34,56 s. Dependências e sintaxe também verificadas.
+- O primeiro CI falhou porque work/pytest dependia de um diretório pai ausente no clone; corrigido em pytest.ini para .pytest-tmp. O novo CI concluiu com sucesso em clone Linux limpo.
+- O PDF foi estabilizado com invariant=1: entradas iguais geram os mesmos bytes, comprovado por teste de repetição.
+- PDF atual: 11 páginas renderizadas e revisadas visualmente, com Parte A em uma página.
+- Reprodução integral adicional: pipeline executado em 96,2 s, gerou CSV idêntico byte a byte ao final preservado.
+- Amostra real nesta revisão: 49 linhas, 47 elegíveis, 0,2 s.
+- As três respostas recebidas do solicitante foram integradas; ele autorizou correções factuais e os critérios TAD > 10%, nota < 3,8 e calendário/janela utilizados.
+- Monitoramento: 1.171 vendedores na coorte de 05/08/2018 a 03/09/2018; média das notas únicas por pedido com peso 1; dias úteis de segunda a sexta sem feriados.
+- Revisão independente da função de acompanhamento não encontrou bug concreto; cinco testes específicos passaram.
+- A automação do navegador foi interrompida pela ferramenta por não conseguir confirmar a URL com segurança. Não houve publicação no Streamlit Community Cloud nem fabricação de link.
+- Ainda não pronto para entrega: faltam justificativas reais do diário, conclusão técnica, pesquisas e validação dos demais integrantes, contribuições reais de todos e painel publicado.
+
+---
+
+# Histórico da primeira implementação
+
 # Verificação técnica executada - 17/11/2026
 
 Verificações realizadas automaticamente pelo Codex. **Não representam revisão humana dos integrantes.**
@@ -59,7 +80,7 @@ O resultado ficou separado da base do painel. Um dos 50 pedidos não tinha item 
 
 ## Testes automatizados
 
-Último comando de suíte completa:
+Comando da primeira suíte completa documentada:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest -q
@@ -102,7 +123,7 @@ Temporários de testes futuros ficam em work/pytest, conforme pytest.ini.
 Revisão independente somente leitura identificou os itens 4 e 5, e confirmou suas correções com assertions
 adicionais para preço/frete infinitos e vendedor parcial/totalmente ausente. Não houve alterações pelo revisor.
 
-## Publicação e pendências reais
+## Estado de publicação antes da segunda etapa (histórico)
 
 - Git local inicializado em main, **sem commits nem remoto**. Nenhum histórico de integrantes foi simulado.
 - CLI GitHub: `gh auth status` informou ausência de login.
