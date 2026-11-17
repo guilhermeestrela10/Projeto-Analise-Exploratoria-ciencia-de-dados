@@ -90,11 +90,12 @@ def main():
     paragraph('Referência: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
     story.append(PageBreak())
     paragraph('Parte A - Sumário executivo', 'Heading1')
-    paragraph('Máximo de uma página. Autoria humana obrigatória.', 'Heading2')
+    paragraph('Texto fornecido pelo solicitante; revisão factual autorizada.', 'Heading2')
     author_text = (REPORTS / 'secoes_autorais.md').read_text(encoding='utf-8')
     executive = author_text.split('## Parte A - Sumário executivo (máximo de uma página)', 1)[-1].split('## Resposta 1', 1)[0].strip()
-    paragraph(executive or '[Equipe preencher o sumário executivo.]')
-    paragraph('A versão final deve responder às três perguntas do cliente e apresentar as recomendações que a equipe validou. Não substituir este campo por uma conclusão automática.')
+    for block in (executive or '[Equipe preencher o sumário executivo.]').split('\n\n'):
+        paragraph(block)
+    paragraph('Texto integrado a partir das respostas recebidas. A validação dos demais integrantes permanece pendente.')
     story.append(PageBreak())
     paragraph('Parte B - Relatório técnico', 'Heading1')
     section('1. Problema e recorte', 'O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. Contextualização adicional e pesquisas da equipe devem ser acrescentadas na seção autoral.')
@@ -146,7 +147,7 @@ def main():
         canvas.drawString(50, 27, 'Grupo 04 | Rascunho técnico - autoria humana pendente')
         canvas.drawRightString(545, 27, str(doc.page))
 
-    SimpleDocTemplate(str(pdf), pagesize=A4, rightMargin=50, leftMargin=50, topMargin=48, bottomMargin=55,
+    SimpleDocTemplate(str(pdf), pagesize=A4, rightMargin=50, leftMargin=50, topMargin=48, bottomMargin=55, invariant=1,
         title='Grupo 04 - Gestão de Vendedores Parceiros', author='Grupo 04 - conteúdo técnico assistido por IA').build(story, onFirstPage=footer, onLaterPages=footer)
     (REPORTS / 'relatorio_tecnico.md').write_text('# Parte B - Conteúdo técnico automático\n\n' + '\n'.join(technical), encoding='utf-8')
     print(f'PDF técnico gerado: {pdf.name}. Campos autorais permanecem pendentes.')

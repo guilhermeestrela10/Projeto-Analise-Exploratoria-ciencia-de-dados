@@ -25,12 +25,12 @@ O registro de IA deve continuar visível e cada integrante deve conseguir explic
 | Função sobre DataFrames originais e amostras novas | preprocessar e CLI; recortes reais, vazios, constantes e sem correspondência | Testado; ensaio humano ainda necessário |
 | CSV abaixo de 100 MB e dicionário completo | 100.010 linhas, 41 colunas, 38.373.468 bytes; Anexo C completo | Atendido |
 | Multipage, dois filtros e fonte CSV final | Inicial e três páginas; UF, vendedor e período; fonte única | Testado localmente |
-| Conclusão de negócio em cada página | Campos de texto externos prontos para receber autoria da equipe | Pendente, não é um critério já cumprido |
+| Conclusão de negócio em cada página | Respostas fornecidas pelo solicitante, revisadas com autorização e inseridas no painel | Revisão dos demais integrantes pendente |
 | PDF A/B/C; Parte A até uma página | PDF técnico de dez páginas com campos humanos destacados | Parte B preparada; A e justificativas de C pendentes |
 | README com principais conclusões e link do painel | Instalação, métricas, briefing e responsáveis propostos | Conclusões, confirmação de responsáveis e links finais pendentes |
 | IA registrada, marcas no código e nos commits | uso_de_ia.md; código marcado; novos commits assistidos com [IA] | Registro mantido; revisão humana não foi presumida |
 | Commits de todos os quatro integrantes | Commit preexistente do proprietário preservado | Faltam contribuições reais dos demais integrantes |
-| Repositório público e Streamlit Community Cloud | Projeto local preparado; autenticação GitHub CLI solicitada | Publicação ainda não confirmada |
+| Repositório público e Streamlit Community Cloud | GitHub público criado e primeiro push confirmado | Community Cloud pendente |
 
 ## O que foi corrigido nesta revisão
 
@@ -64,3 +64,12 @@ A checagem de autoria retorna código 1 no estado atual, apontando pendências r
 6. Regenerar e revisar o PDF após preencher os textos humanos. Enviar PDF e os dois links reais pela plataforma A.
 
 Prazo: 30/11/2026, 23h59 de Brasília. Apresentação: 02/12/2026, até dez minutos, sendo cinco de negócio e cinco técnicos.
+
+## Atualização após respostas do solicitante
+
+- Nome confirmado: Projeto-Analise-Exploratoria-ciencia-de-dados.
+- Repositório público criado e push confirmado: https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados.
+- As três respostas foram recebidas; as correções factuais e definições dos critérios foram aprovadas expressamente pelo solicitante. Não se presume revisão dos outros integrantes.
+- Monitoramento implementado: TAD > 10%, nota < 3,8, coorte dos últimos 30 dias da base filtrada, peso 1 por pedido avaliado e dias úteis sem feriados. Nenhum limite de tempo médio foi inventado.
+- O diário recebeu contagens e operações implementadas, mantendo justificativas humanas pendentes. Não foram fabricadas decisões de reuniões do grupo.
+- A automação do navegador foi interrompida porque não conseguiu determinar a URL com segurança. Community Cloud continua pendente; nenhum link de aplicativo publicado foi inventado.

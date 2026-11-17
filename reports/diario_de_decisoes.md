@@ -1,15 +1,15 @@
 # Diário de decisões - Anexo B
 
-MODELO PARA AUTORIA HUMANA. Evidências geradas automaticamente estão em evidencias.json,
-antes_depois.csv, alternativas_outliers.csv e selecao_atributos.json. Preencha com decisões
-efetivamente discutidas pela equipe. A implementação técnica atual é uma proposta da ferramenta.
-As justificativas não foram geradas por IA. Acrescente linhas para todas as decisões reais.
+Evidências e operações técnicas preenchidas automaticamente. Não se afirma que estas operações foram discutidas ou validadas pelo grupo.
+As justificativas autorais continuam pendentes. O apoio_tecnico_diario.md é material de estudo gerado por IA e não deve ser apresentado como justificativa dos integrantes.
 
-| Nº | Etapa | Problema encontrado | Decisão tomada | Justificativa (autoria humana) | Impacto nos dados |
+| Nº | Etapa | Problema encontrado | Decisão tomada | Justificativa | Impacto nos dados |
 |---|---|---|---|---|---|
-| 1 | Ausências | Consultar evidencias.json: before/nulls | [Equipe preencher] | [Equipe redigir] | [Equipe citar contagens] |
-| 2 | Duplicatas e chaves | Consultar antes_depois.csv | [Equipe preencher] | [Equipe redigir] | [Equipe citar contagens] |
-| 3 | Outliers | Consultar alternativas_outliers.csv | [Equipe preencher] | [Equipe redigir] | [Equipe comparar alternativas] |
-| 4 | Datas e inconsistências | Consultar invalid_dates e invalid_chronology_pairs | [Equipe preencher] | [Equipe redigir] | [Equipe citar contagens] |
-| 5 | Granularidade e avaliações | Consultar reviews_reduced e multi_seller_orders | [Equipe preencher] | [Equipe redigir] | [Equipe citar contagens] |
-| 6 | Transformações e seleção | Consultar selecao_atributos.json | [Equipe preencher] | [Equipe redigir] | [Equipe citar atributos] |
+| 1 | Ausências | Orders possui 4.908 células ausentes: 160 aprovações, 1.783 despachos e 2.965 entregas ao cliente | Ferramenta preservou ausências e aplicou elegibilidade por indicador; decisão humana a confirmar | [Equipe redigir sua justificativa real] | 94.955 pedidos elegíveis para despacho; 94.257 com nota elegível |
+| 2 | Duplicatas e chaves | Zero duplicatas exatas nas cinco tabelas originais | Ferramenta remove duplicatas exatas e rejeita chaves conflitantes; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Nenhuma linha original removida por duplicata exata |
+| 3 | Outliers | 5.391 tempos de despacho fora das cercas IQR na população elegível | Ferramenta preservou extremos nos indicadores e criou clipping demonstrativo; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Excluir extremos reduziria de 94.955 para 89.564 pedidos; taxa de 9,2349% para 5,6585% |
+| 4 | Múltiplos vendedores | 1.278 pedidos com mais de um vendedor observado; data e nota pertencem ao pedido | Ferramenta excluiu esses pedidos da comparação individual; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Uma linha por pedido-vendedor; contagem individual limitada a vendedor único observado |
+| 5 | Avaliações repetidas | 551 registros excedentes por pedido | Ferramenta selecionou última resposta datada com desempate determinístico; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Uma avaliação selecionada por pedido, sem multiplicar notas por quantidade de itens |
+| 6 | Prazo dos itens | Itens do mesmo pedido-vendedor podem ter prazos distintos | Ferramenta usa menor prazo, preserva maior e mede sensibilidade; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Consultar comparacao_prazos.csv; grupo com qualquer prazo ausente fica inelegível |
+| 7 | Transformações | Escalas monetárias e status não são diretamente comparáveis numericamente | Ferramenta criou MinMax, Z-score e one-hot apenas demonstrativos; decisão humana a confirmar | [Equipe redigir sua justificativa real] | Medidas em dias e BRL preservadas; constantes e ausências testadas |
+| 8 | Acompanhamento | Solicitante propôs TAD > 10%, piso de nota 3,8 e tempo médio em dias úteis | Limites propostos pelo solicitante; janela histórica de 30 dias, peso 1 por nota e segunda a sexta sem feriados aprovados expressamente | [Equipe redigir sua justificativa para os limites] | 1.171 vendedores observados na janela de 05/08/2018 a 03/09/2018; não há advertência automática |

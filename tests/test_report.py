@@ -3,6 +3,7 @@ import subprocess
 import sys
 from pypdf import PdfReader
 from src.load_data import ROOT
+import hashlib
 
 
 def test_report_has_required_parts_and_draft_status():
@@ -14,3 +15,11 @@ def test_report_has_required_parts_and_draft_status():
     assert 'Parte B - Relatório técnico' in text
     assert 'Parte C - Diário de decisões' in text
     assert 'AUTORAIS PENDENTES' in text
+
+
+def test_unchanged_inputs_generate_identical_pdf():
+    command = [sys.executable, str(ROOT / 'scripts/gerar_relatorio.py')]
+    subprocess.run(command, cwd=ROOT, check=True, capture_output=True)
+    first = hashlib.sha256((ROOT / 'reports/relatorio_final.pdf').read_bytes()).hexdigest()
+    subprocess.run(command, cwd=ROOT, check=True, capture_output=True)
+    assert hashlib.sha256((ROOT / 'reports/relatorio_final.pdf').read_bytes()).hexdigest() == first
