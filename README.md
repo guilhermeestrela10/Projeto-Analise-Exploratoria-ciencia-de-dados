@@ -3,9 +3,10 @@
 Centro Universitário Santo Agostinho (UNIFSA) - Bacharelado em Engenharia de Software.
 Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefing 5: Gestão de Vendedores Parceiros.
 
-**Entrega em preparação:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
-vieram do solicitante, com revisão factual autorizada. Justificativas do diário, conclusão técnica,
-pesquisas e validação dos demais integrantes continuam pendentes, conforme seção 7.1 do PDF.
+**Versão completa para revisão:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
+vieram do solicitante, com revisão factual autorizada. Justificativas, conclusão e contextualização foram
+completadas como rascunho IA. A autoria humana exigida na seção 7.1 do PDF e a validação dos integrantes
+continuam pendentes; textos preenchidos não equivalem a entrega acadêmica aprovada.
 O GitHub e o painel estão publicados. O proprietário confirmou acesso anônimo, sem login, e funcionamento das três páginas.
 
 ## Integrantes e frentes propostas
@@ -174,7 +175,7 @@ Ele não comprova autoria, aprovação humana ou publicação. O detalhamento da
 O workflow GitHub Actions executa testes a cada push. A execução remota documentada aprovou 33 testes; resultado em `reports/verificacao.md`.
 As próximas alterações feitas pelo assistente devem seguir o fluxo testar, revisar, commit e push registrado em AGENTS.md.
 
-As três respostas foram fornecidas pelo solicitante e receberam revisão factual expressamente autorizada. Os originais estão em `reports/respostas_recebidas.md`; os textos integrados estão no painel e na Parte A. As justificativas do diário, conclusão técnica, pesquisas e validação dos demais integrantes continuam pendentes.
+As três respostas foram fornecidas pelo solicitante e receberam revisão factual expressamente autorizada. Os originais estão em `reports/respostas_recebidas.md`; os textos integrados estão no painel e na Parte A. As justificativas, conclusão e contextualização agora possuem texto completo identificado como rascunho IA. A validação da equipe e o atendimento às exigências de autoria continuam pendentes.
 Desafios técnicos: granularidade de itens/avaliações, ausência de despacho por vendedor, múltiplas avaliações, cronologias contraditórias e amostras incompletas.
 Consultar `docs/apresentacao.md`, `docs/publicacao.md` e `docs/auditoria_rubrica.md`.
 

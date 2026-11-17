@@ -1,4 +1,4 @@
-"""Localiza campos autorais vazios; não comprova autoria ou aprovação humana."""
+"""Localiza campos vazios e rascunhos IA; não comprova autoria ou aprovação humana."""
 # [IA] registro 4
 import json
 from pathlib import Path
@@ -21,8 +21,8 @@ def verificar_autoria(root):
             text = (reports / name).read_text(encoding='utf-8').strip()
         except OSError:
             text = ''
-        if not text or '[equipe ' in text.lower():
-            pending.append(f'Preencher os campos humanos de reports/{name}.')
+        if not text or '[equipe ' in text.lower() or '[rascunho ia]' in text.lower():
+            pending.append(f'Concluir a autoria humana de reports/{name}: campo vazio, marcador ou rascunho IA identificado.')
     return pending
 
 
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     for item in pending:
         print(f'PENDENTE: {item}')
     if pending:
-        print('NÃO PRONTO PARA ENTREGA: ainda existem campos autorais não preenchidos.')
+        print('NÃO PRONTO PARA ENTREGA: ainda existem pendências de autoria humana.')
     else:
         print('Nenhum campo textual vazio identificado. Conferir autoria, PDF, commits reais e links publicados antes de entregar.')
     raise SystemExit(1 if pending else 0)

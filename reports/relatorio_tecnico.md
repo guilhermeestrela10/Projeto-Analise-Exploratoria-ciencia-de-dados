@@ -2,7 +2,7 @@
 
 ## 1. Problema e recorte
 
-O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. Contextualização adicional e pesquisas da equipe devem ser acrescentadas na seção autoral.
+O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. A contextualização complementar e as referências consultadas pela ferramenta aparecem na seção 12, sem atribuição de pesquisa aos integrantes.
 
 ## 2. Dados e relacionamentos
 

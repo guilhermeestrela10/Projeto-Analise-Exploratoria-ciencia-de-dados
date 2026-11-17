@@ -44,3 +44,15 @@ def test_json_placeholders_are_pending_even_when_not_empty(tmp_path):
     for name in ['secoes_autorais.md', 'diario_de_decisoes.md']:
         (reports / name).write_text('Texto de teste preenchido.', encoding='utf-8')
     assert any('conclusões' in p for p in verificar_autoria(tmp_path))
+
+
+def test_complete_ai_drafts_still_require_human_authorship(tmp_path):
+    reports = tmp_path / 'reports'
+    reports.mkdir()
+    (reports / 'conclusoes_equipe.json').write_text(json.dumps(dict.fromkeys(
+        ['inicio', 'atrasos', 'avaliacoes', 'criterios'], 'Texto fornecido no teste')))
+    for name in ['secoes_autorais.md', 'diario_de_decisoes.md']:
+        (reports / name).write_text('[RASCUNHO IA]\nTexto completo para revisão.', encoding='utf-8')
+    pending = verificar_autoria(tmp_path)
+    assert any('secoes_autorais' in p for p in pending)
+    assert any('diario_de_decisoes' in p for p in pending)

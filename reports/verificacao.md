@@ -1,3 +1,15 @@
+# Complementação dos textos como rascunho IA - 17/11/2026
+
+- Por solicitação do usuário, o documento recebeu texto completo para conclusão técnica, contextualização e oito justificativas.
+- A origem assistida por IA foi preservada; não foram inventadas reuniões, revisões ou pesquisas dos integrantes.
+- PDF: 12 páginas, com todas as páginas renderizadas e revisadas visualmente; Parte A continua em uma página.
+- Não restam os marcadores de campos vazios nas páginas do PDF. O marcador RASCUNHO IA identifica os complementos.
+- Suíte completa executada: 34 passed in 36.60s. Verificador de entrega: cinco testes específicos passaram após ajustar as mensagens.
+- O verificador mantém código 1 para rascunhos IA: texto preenchido não comprova atendimento às exigências de autoria humana.
+- Referências técnicas são atribuídas à ferramenta. Não se afirma que a equipe realizou pesquisa bibliográfica não confirmada.
+
+---
+
 # Confirmação manual do proprietário - 17/11/2026
 
 O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.

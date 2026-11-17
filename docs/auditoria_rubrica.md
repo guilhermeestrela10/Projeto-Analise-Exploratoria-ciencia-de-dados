@@ -17,7 +17,7 @@ Fonte: PDF oficial, página 5; anexos B/C/D nas páginas 11/12. A auditoria não
 - Repositório público com nome `Projeto-Analise-Exploratoria-ciencia-de-dados`: publicado e confirmado na conta guilhermeestrela10; consultar README para o link.
 - Código, notebook, função de pipeline, CSV, dicionário, painel e requirements: preparados; execução verificada em reports/verificacao.md.
 - CSV final menor que 100 MB: tamanho e hash em data/processed/metadados.json; nenhuma linha foi removida para diminuir tamanho.
-- Registro de IA: uso_de_ia.md, três registros, marcadores nos arquivos Python, sem revisão humana fictícia.
+- Registro de IA: uso_de_ia.md, seis registros, marcadores nos arquivos Python, sem revisão humana fictícia.
 - Cinco tabelas: três obrigatórias e dois complementares; geolocation não utilizada.
 - Scikit-Learn exclusivamente pré-processamento; sem modelo de classificação ou previsão.
 - Relatório PDF: Partes A/B/C presentes; Parte A e respostas recebidas integradas com revisão autorizada. Justificativas e demais campos humanos continuam sinalizados; ainda não é relatório final para entrega.
@@ -38,3 +38,7 @@ dos critérios com partes humanas ou publicação pendentes.
 ## Link do painel informado pelo proprietário
 
 [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.
+
+## Complementação textual para revisão
+
+O PDF de 12 páginas possui conclusão, contextualização e oito justificativas técnicas preenchidas como rascunho IA. A identificação da assistência foi mantida. Os 34 testes passaram. Não se considera atendido o requisito de autoria humana apenas pelo preenchimento automático desses textos.

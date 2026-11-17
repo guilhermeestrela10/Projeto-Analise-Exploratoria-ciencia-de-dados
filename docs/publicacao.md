@@ -38,9 +38,10 @@ O CSV final ultrapassa o limite comum de upload pelo navegador; usar Git para en
 
 ## Relatório e envio
 
-O PDF técnico gerado tem indicação de rascunho. A Parte A e as respostas do painel já foram integradas
-a partir dos textos do solicitante, com correções factuais autorizadas. Ainda faltam justificativas da Parte C,
-conclusão técnica, pesquisas e validação dos demais integrantes.
+O PDF possui texto completo, com indicação de rascunho. A Parte A e as respostas do painel foram integradas
+a partir dos textos do solicitante, com correções factuais autorizadas. As justificativas da Parte C,
+a conclusão técnica e a contextualização foram completadas pela ferramenta como rascunho IA para estudo.
+A autoria humana exigida pelo documento da disciplina e a validação dos demais integrantes continuam pendentes.
 Completar `reports/secoes_autorais.md`, `reports/diario_de_decisoes.md` e `reports/conclusoes_equipe.json`.
 Gerar novamente o PDF e revisar todas as páginas. A ferramenta incorpora os arquivos humanos existentes.
 Na plataforma A da disciplina, enviar PDF, link GitHub e link Streamlit até **30/11/2026, 23h59 de Brasília**.

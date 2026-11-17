@@ -1,4 +1,4 @@
-"""Gera PDF técnico com campos autorais explícitos, sem redigir conclusões."""
+"""Gera o relatório com origem dos textos e condição de rascunho explícitas."""
 # [IA] registro 3
 from pathlib import Path
 import json
@@ -86,7 +86,7 @@ def main():
     paragraph('Guilherme Estrela · David Gabriel · Carlos Gabriel Raposo · Roger')
     story.append(Spacer(1, 24))
     paragraph('RASCUNHO TÉCNICO - PARTES AUTORAIS PENDENTES', 'Heading2')
-    paragraph('Implementação e evidências técnicas assistidas por IA. As respostas e o sumário foram integrados a partir do texto fornecido pelo solicitante, com revisão factual autorizada. Este PDF ainda não é uma entrega acadêmica final: justificativas do diário, conclusão técnica, pesquisas e validação dos demais integrantes permanecem pendentes.')
+    paragraph('Implementação e evidências técnicas assistidas por IA. As respostas e o sumário vieram do solicitante, com revisão factual autorizada. As justificativas, conclusão técnica e contextualização foram completadas pela ferramenta a pedido do solicitante e estão identificadas como rascunho IA. Não se afirma autoria ou validação desses complementos pelos integrantes. A versão não comprova o atendimento às partes de autoria humana exigidas na seção 7.1 do documento da disciplina.')
     paragraph('Referência: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
     story.append(PageBreak())
     paragraph('Parte A - Sumário executivo', 'Heading1')
@@ -98,7 +98,7 @@ def main():
     paragraph('Texto integrado a partir das respostas recebidas. A validação dos demais integrantes permanece pendente.')
     story.append(PageBreak())
     paragraph('Parte B - Relatório técnico', 'Heading1')
-    section('1. Problema e recorte', 'O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. Contextualização adicional e pesquisas da equipe devem ser acrescentadas na seção autoral.')
+    section('1. Problema e recorte', 'O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. A contextualização complementar e as referências consultadas pela ferramenta aparecem na seção 12, sem atribuição de pesquisa aos integrantes.')
     section('2. Dados e relacionamentos', 'Fonte: Olist Brazilian E-Commerce Public Dataset, Kaggle. Cinco arquivos foram obtidos da fonte pública; hashes de cada original estão registrados em data/raw/proveniencia.json. Geolocalização não foi extraída nem utilizada. IDs de clientes e textos livres de avaliações não são incluídos na tabela final.')
     table([['Tabela', 'Linhas brutas', 'Colunas', 'Duplicatas exatas']] + [[k, v['rows'], v['columns'], v['duplicates']] for k, v in audit['before'].items()], [170, 105, 95, 113])
     paragraph('Itens -> produtos: N:1; itens agregados -> contagens por pedido: N:1; grupos -> pedidos: N:1; grupos -> vendedores: N:1; grupos -> avaliação única: N:1. Todas essas relações são validadas no código. A chave final é order_id + seller_id.')
@@ -129,11 +129,11 @@ def main():
     section('11. Limites e validação humana', 'Amostras com itens faltantes podem subestimar o número de vendedores e alterar prazos e valores agregados. O pipeline não recupera dados não fornecidos. Avaliações multivendedor não são atribuídas individualmente na análise principal. A última resposta não garante que a nota se refira apenas ao despacho. Intervalos de Wilson descrevem incerteza da taxa sob aproximação binomial, sem corrigir dependência temporal ou confundimento. Os dados são históricos; não representam o desempenho atual dos parceiros.')
     story.append(PageBreak())
     heading('12. Respostas recebidas e validações da equipe')
-    # O texto abaixo vem do arquivo humano, preservado pelo gerador.
+    # [IA] registro 6: preservar as indicações de origem dos textos recebidos e dos complementos IA.
     markdown('## Resposta 1' + author_text.split('## Resposta 1', 1)[-1] if '## Resposta 1' in author_text else author_text)
     story.append(PageBreak())
     paragraph('Parte C - Diário de decisões', 'Heading1')
-    paragraph('Campos de autoria humana. As evidências automáticas não substituem a justificativa exigida no Anexo B.')
+    paragraph('Rascunho de justificativas produzido por IA para estudo. Não substitui a autoria humana exigida no Anexo B e na seção 7.1.')
     markdown((REPORTS / 'diario_de_decisoes.md').read_text(encoding='utf-8'))
     heading('Referências e transparência')
     paragraph('Olist: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Documentação técnica: pandas.pydata.org, scikit-learn.org e docs.streamlit.io. Documento da disciplina: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, fornecido localmente. Registro de IA: uso_de_ia.md, com revisão humana ainda pendente.')
