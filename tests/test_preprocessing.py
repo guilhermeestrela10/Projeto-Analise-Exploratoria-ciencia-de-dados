@@ -134,3 +134,11 @@ def test_unknown_seller_not_dropped_or_assumed_single(raw):
     unknown = preprocessar(*raw)
     assert len(unknown) == 1
     assert not unknown.eligible_dispatch.any()
+
+
+def test_malformed_review_score_is_counted_in_audit(raw):
+    raw[4]['review_score'] = raw[4].review_score.astype(object)
+    raw[4].loc[2, 'review_score'] = 'nota inválida'
+    d = preprocessar(*raw)
+    assert pd.isna(d.set_index('order_id').loc['b', 'review_score'])
+    assert d.attrs['audit']['invalid_review_scores'] == 1

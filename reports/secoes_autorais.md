@@ -1,25 +1,32 @@
-# Partes de autoria humana - preencher pela equipe
+# Textos fornecidos pelo solicitante e revisão autorizada
+
+O solicitante enviou as três respostas e autorizou correções factuais e inclusão de números e vendedores.
+Os originais estão em respostas_recebidas.md. A revisão não comprova aprovação dos demais integrantes.
 
 ## Parte A - Sumário executivo (máximo de uma página)
 
-[Equipe escrever a resposta às três perguntas e suas recomendações, com base nos resultados validados.]
+No ranking de vendedores com pelo menos 30 pedidos elegíveis, os maiores percentuais de atraso foram: 48efc9d94a9834137efd9ea76b065a38, com 28 atrasos em 33 pedidos (84,85%); 835f0f7810c76831d6c7d24c7a646d4d, com 31 em 40 (77,50%); e a7f13822ceb966b076af67121f87b063, com 45 em 75 (60,00%). O atraso compara a entrega à transportadora com o prazo-limite dos itens. Esse resultado identifica os maiores percentuais nesse recorte e não comprova que 10% a 15% dos vendedores concentrem os problemas.
+
+Sim, observamos associação entre atraso no despacho e notas piores. Entre os pedidos elegíveis com avaliação, a nota média foi 4,19 sem atraso e 3,68 com atraso. A proporção de notas 1 e 2 foi 11,89% sem atraso e 24,21% com atraso. Essa comparação não prova que o vendedor causou a nota baixa e não permite classificar toda a relação como correlação forte.
+
+Propomos acompanhar três métricas: Taxa de Atraso de Despacho superior a 10%, nota média por pedido nos últimos 30 dias da base filtrada com piso de 3,8, e tempo médio entre aprovação e postagem em dias úteis. Cada pedido elegível com nota tem peso 1. A janela termina na última compra do recorte histórico; dias úteis consideram segunda a sexta, sem feriados. Ainda não definimos um limite para o tempo médio.
 
 ## Resposta 1 - Quais vendedores mais atrasam o despacho?
 
-[Equipe escrever. Evidências: metricas_vendedores.csv, ranking e série mensal.]
+No ranking de vendedores com pelo menos 30 pedidos elegíveis, os maiores percentuais de atraso foram: 48efc9d94a9834137efd9ea76b065a38, com 28 atrasos em 33 pedidos (84,85%); 835f0f7810c76831d6c7d24c7a646d4d, com 31 em 40 (77,50%); e a7f13822ceb966b076af67121f87b063, com 45 em 75 (60,00%). O atraso compara a entrega à transportadora com o prazo-limite dos itens. Esse resultado identifica os maiores percentuais nesse recorte e não comprova que 10% a 15% dos vendedores concentrem os problemas.
 
 ## Resposta 2 - Vendedores que atrasam recebem avaliações piores?
 
-[Equipe escrever. Evidências: comparacao_avaliacoes.csv e avaliacoes_estratificadas.csv.]
+Sim, observamos associação entre atraso no despacho e notas piores. Entre os pedidos elegíveis com avaliação, a nota média foi 4,19 sem atraso e 3,68 com atraso. A proporção de notas 1 e 2 foi 11,89% sem atraso e 24,21% com atraso. Essa comparação não prova que o vendedor causou a nota baixa e não permite classificar toda a relação como correlação forte.
 
 ## Resposta 3 - Que critérios usar para acompanhar ou advertir vendedores?
 
-[Equipe escrever os critérios que efetivamente discutiu e justificou. O simulador não é uma política validada.]
+Propomos acompanhar três métricas: Taxa de Atraso de Despacho superior a 10%, nota média por pedido nos últimos 30 dias da base filtrada com piso de 3,8, e tempo médio entre aprovação e postagem em dias úteis. Cada pedido elegível com nota tem peso 1. A janela termina na última compra do recorte histórico; dias úteis consideram segunda a sexta, sem feriados. Ainda não definimos um limite para o tempo médio.
 
 ## Conclusão técnica autoral
 
-[Equipe escrever após validar o pipeline, os tratamentos e os limites.]
+[Equipe escrever sua conclusão técnica após estudar o código e validar os tratamentos.]
 
 ## Contexto e pesquisas da equipe
 
-[Equipe incluir fontes realmente consultadas e o contexto que encontrou sobre marketplaces brasileiros.]
+[Equipe acrescentar as pesquisas que de fato realizou, com suas fontes.]

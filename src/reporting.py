@@ -6,7 +6,7 @@ import math
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from .analysis import seller_metrics, review_comparison, selection_report
+from .analysis import seller_metrics, review_comparison, selection_report, monitoring_metrics
 from .preprocessing import REQUIRED
 from .visualizations import save_charts
 
@@ -98,6 +98,9 @@ def write_outputs(d, raw, root, charts=True):
         pd.DataFrame({'tipo_carregado': frame.dtypes.astype(str), 'nulos': frame.isna().sum(),
             'distintos': frame.nunique()}).to_csv(reports / f'perfil_{name}.csv')
     seller_metrics(d).to_csv(reports / 'metricas_vendedores.csv', index=False)
+    # [IA] registro 5: critérios propostos e definidos pelo solicitante.
+    recent, _, _ = monitoring_metrics(d)
+    recent.to_csv(reports / 'criterios_30_dias.csv', index=False)
     review_comparison(d).to_csv(reports / 'comparacao_avaliacoes.csv', index=False)
     e = d[d.eligible_dispatch]
     deadline_comparison = []

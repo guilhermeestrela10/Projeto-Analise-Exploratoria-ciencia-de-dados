@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import streamlit as st
 from .load_data import ROOT
-from .analysis import filter_data, seller_metrics, review_comparison
+from .analysis import filter_data, seller_metrics, review_comparison, monitoring_metrics
 from .visualizations import ranking_chart, review_chart
 
 
@@ -43,7 +43,8 @@ def friendly_metrics(metrics):
         'late_rate': 'Atrasos (%)', 'mean_delay_days': 'Excesso médio (dias)', 'median_dispatch_days': 'Mediana até despacho (dias)',
         'review_count': 'Pedidos com nota', 'mean_score': 'Nota média', 'negative_count': 'Notas 1 ou 2',
         'negative_rate': 'Notas negativas (%)', 'late_ci_low': 'Limite inferior 95% (%)', 'late_ci_high': 'Limite superior 95% (%)',
-        'cenario': 'Resultado do cenário'})
+        'cenario': 'Resultado do cenário', 'mean_business_days': 'Média até despacho (dias úteis)',
+        'above_tad_limit': 'TAD acima de 10%', 'below_score_floor': 'Nota abaixo de 3,8'})
 
 
 def render(page):
@@ -134,10 +135,18 @@ def render(page):
             'pedidos': 'Pedidos avaliados', 'nota_media': 'Nota média'}).round(2), hide_index=True)
         st.caption('Associação não implica causalidade. Transporte, categoria, período e perfil do pedido podem afetar as notas. O recorte por atraso ao cliente é descritivo.')
     elif page == 'criterios':
+        # [IA] registro 5: definições e limites aprovados pelo solicitante.
+        st.subheader('Critérios propostos pela equipe')
+        recent, first_day, last_day = monitoring_metrics(d)
+        if first_day is not None:
+            st.caption(f'Compras de {first_day:%d/%m/%Y} a {last_day:%d/%m/%Y}: últimos 30 dias até a última compra do recorte filtrado, não até a data atual.')
+        if not recent.empty:
+            st.dataframe(friendly_metrics(recent), hide_index=True)
+        st.caption('TAD > 10%; nota média < 3,8. Cada pedido elegível com nota tem peso 1: soma das notas / quantidade de notas. Dias úteis: segunda a sexta no intervalo da aprovação até o despacho, sem feriados. O tempo médio é acompanhado sem limite automático, pois a equipe não definiu esse limite. Volumes e ausências devem ser considerados antes de qualquer advertência.')
         st.subheader('Simulador de critérios para discussão da equipe')
         st.write('Os valores abaixo são parâmetros exploratórios. A equipe deve definir e justificar os critérios finais.')
         minimum = st.number_input('Volume mínimo de pedidos elegíveis', 1, 10000, 30)
-        threshold = st.slider('Limiar de atraso do cenário (%)', 0, 100, 20)
+        threshold = st.slider('Limiar de atraso do cenário (%)', 0, 100, 10)
         metrics['cenario'] = 'Abaixo do volume informado'
         volume = metrics.eligible_orders.ge(minimum)
         metrics.loc[volume, 'cenario'] = 'Dentro do limiar informado'

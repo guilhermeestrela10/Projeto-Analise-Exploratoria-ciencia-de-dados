@@ -14,7 +14,7 @@ Fonte: PDF oficial, página 5; anexos B/C/D nas páginas 11/12. A auditoria não
 
 ## Entregáveis e restrições
 
-- Repositório público com nome `Projeto-Analise-Exploratoria-Grupo04`: publicação pendente; conta conectada identificada, busca não encontrou o repositório solicitado.
+- Repositório público com nome `Projeto-Analise-Exploratoria-ciencia-de-dados`: publicação pendente; conta conectada identificada, busca não encontrou o repositório solicitado.
 - Código, notebook, função de pipeline, CSV, dicionário, painel e requirements: preparados; execução verificada em reports/verificacao.md.
 - CSV final menor que 100 MB: tamanho e hash em data/processed/metadados.json; nenhuma linha foi removida para diminuir tamanho.
 - Registro de IA: uso_de_ia.md, três registros, marcadores nos arquivos Python, sem revisão humana fictícia.

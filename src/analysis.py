@@ -48,6 +48,29 @@ def review_comparison(d):
         mean_score=('review_score', 'mean'), negative_rate=('negative_review', 'mean')).reset_index()
 
 
+# [IA] registro 5
+def monitoring_metrics(d):
+    """Critérios propostos pelo solicitante, aplicados ao último mês observado no recorte."""
+    dates = pd.to_datetime(d.order_purchase_timestamp, errors='coerce')
+    end = dates.max()
+    if pd.isna(end):
+        return pd.DataFrame(), None, None
+    end = end.normalize()
+    start = end - pd.Timedelta(days=29)
+    window = filter_data(d, [], [], start, end)
+    metrics = seller_metrics(window)
+    eligible = window[window.eligible_dispatch.astype(bool)].copy()
+    approved = pd.to_datetime(eligible.order_approved_at).to_numpy(dtype='datetime64[D]')
+    carrier = pd.to_datetime(eligible.order_delivered_carrier_date).to_numpy(dtype='datetime64[D]')
+    # Conta dias de segunda a sexta em [aprovação, despacho); não desconta feriados.
+    eligible['business_days'] = np.busday_count(approved, carrier)
+    days = eligible.groupby('seller_id').business_days.mean().rename('mean_business_days')
+    metrics = metrics.merge(days, on='seller_id', how='left', validate='one_to_one')
+    metrics['above_tad_limit'] = metrics.late_rate.gt(.10) & metrics.eligible_orders.gt(0)
+    metrics['below_score_floor'] = metrics.mean_score.lt(3.8) & metrics.review_count.gt(0)
+    return metrics, start, end
+
+
 def selection_report(d):
     columns = ['item_count', 'sales_value', 'freight_value', 'approval_to_carrier_days',
         'dispatch_delay_days', 'transport_days', 'delivery_days', 'review_score', 'freight_share',

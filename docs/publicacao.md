@@ -2,7 +2,7 @@
 
 ## GitHub
 
-Nome solicitado: `Projeto-Analise-Exploratoria-Grupo04`. Visibilidade pública.
+Nome solicitado: `Projeto-Analise-Exploratoria-ciencia-de-dados`. Visibilidade pública.
 Antes de publicar, conferir `uso_de_ia.md`, autoria humana e arquivos selecionados.
 Versionar código, notebook, requirements.txt, documentação, CSV final, metadados e relatório após preenchimento.
 Não versionar `.venv`, dados brutos, textos livres de avaliações, credenciais, caches ou work/.
@@ -22,7 +22,7 @@ gh auth setup-git
 git add .
 git diff --cached --stat
 git commit -m "feat: projeto Olist Grupo04 [IA]"
-gh repo create Projeto-Analise-Exploratoria-Grupo04 --public --source=. --remote=origin --push
+gh repo create Projeto-Analise-Exploratoria-ciencia-de-dados --public --source=. --remote=origin --push
 ```
 
 Conferir o conteúdo staged antes do commit: somente os arquivos listados na auditoria devem entrar.

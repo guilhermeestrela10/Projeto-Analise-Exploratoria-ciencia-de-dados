@@ -1,4 +1,4 @@
-# Projeto-Analise-Exploratoria-Grupo04
+# Projeto-Analise-Exploratoria-ciencia-de-dados
 
 Centro Universitário Santo Agostinho (UNIFSA) - Bacharelado em Engenharia de Software.
 Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefing 5: Gestão de Vendedores Parceiros.
@@ -94,6 +94,10 @@ Abra o endereço local mostrado no terminal. As quatro páginas usam exclusivame
 Filtros de UF, vendedor e período afetam indicadores, gráficos e tabelas.
 O filtro de volume limita o ranking, não os indicadores gerais da página.
 A página de critérios é um simulador exploratório, sem recomendar advertências automaticamente.
+Após as definições aprovadas pelo solicitante, essa página também acompanha TAD > 10%, nota média < 3,8
+e tempo até despacho em dias úteis (segunda a sexta, sem feriados). Usa a coorte de compras nos últimos
+30 dias até a última compra do recorte filtrado. Cada pedido elegível avaliado tem peso 1.
+Não foi definido um limite automático para o tempo médio. Valores e parâmetros continuam exigindo avaliação humana.
 
 ## Organização
 
@@ -158,11 +162,22 @@ Dependências principais têm versões fixas; `reports/ambiente.txt` registra to
 
 ## Conclusões, publicação e entrega
 
+Para conferir os campos autorais ainda vazios, execute:
+
+```powershell
+.\.venv\Scripts\python.exe -X utf8 scripts/verificar_entrega.py
+```
+
+Esse comando aponta pendências textuais e retorna código 1 enquanto existirem campos não preenchidos.
+Ele não comprova autoria, aprovação humana ou publicação. O detalhamento da segunda revisão está em `docs/revisao_final.md`.
+O workflow GitHub Actions foi preparado para executar testes a cada push; sua execução remota só pode ser confirmada após publicar.
+As próximas alterações feitas pelo assistente devem seguir o fluxo testar, revisar, commit e push registrado em AGENTS.md.
+
 Conclusões principais: **autoria humana pendente**. Escrever em `reports/conclusoes_equipe.json` e completar as partes A e C do relatório.
 Desafios técnicos: granularidade de itens/avaliações, ausência de despacho por vendedor, múltiplas avaliações, cronologias contraditórias e amostras incompletas.
 Consultar `docs/apresentacao.md`, `docs/publicacao.md` e `docs/auditoria_rubrica.md`.
 
-Repositório público: **pendente de publicação**. Nome: `Projeto-Analise-Exploratoria-Grupo04`.
+Repositório público: **pendente de publicação**. Nome: `Projeto-Analise-Exploratoria-ciencia-de-dados`.
 Painel Streamlit Community Cloud: **pendente de publicação e teste do link**.
 O CSV deve ficar abaixo de 100 MB. O pipeline verifica esse limite e não remove linhas para reduzi-lo.
 Antes de entregar: revisão da equipe, textos autorais, commits reais dos quatro integrantes, repositório público,
