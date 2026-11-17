@@ -76,4 +76,4 @@ Prazo: 30/11/2026, 23h59 de Brasília. Apresentação: 02/12/2026, até dez minu
 
 ## Link do painel informado pelo proprietário
 
-[Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O domínio respondeu HTTP 200 nesta verificação. O cliente automático recebeu a interface de carregamento do Community Cloud, não os indicadores do aplicativo. Portanto, a validação funcional externa, inclusive acesso anônimo e filtros, permanece pendente.
+[Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.

@@ -1,10 +1,18 @@
+# Confirmação manual do proprietário - 17/11/2026
+
+O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.
+
+As pendências de autoria e validação da equipe permanecem.
+
+---
+
 # Link Community Cloud recebido - 17/11/2026
 
 - URL fornecida pelo proprietário: https://wuevyectn67rbfng9xqssx.streamlit.app/
 - Consultas a página inicial e rotas das três páginas responderam HTTP 200, com HTML da interface de carregamento do Community Cloud.
 - O endpoint /_stcore/health também retornou HTML, e não a resposta de saúde do aplicativo. Não foi usado como prova de que o código está funcionando remotamente.
 - A sessão de execução remota não foi confirmada pelo cliente de verificação. Não se afirma validação externa de indicadores, gráficos ou filtros.
-- Foi solicitado ao proprietário testar o acesso anônimo. O resultado deve ser registrado quando houver confirmação.
+- Confirmação recebida do proprietário: o painel abre em janela anônima, sem login, e as três páginas funcionam. Trata-se de verificação manual relatada pelo usuário; não foi atribuída à ferramenta.
 - Os 33 testes locais/remotos do repositório e as demais pendências humanas permanecem conforme o histórico abaixo.
 
 ---

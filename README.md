@@ -6,7 +6,7 @@ Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefin
 **Entrega em preparação:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
 vieram do solicitante, com revisão factual autorizada. Justificativas do diário, conclusão técnica,
 pesquisas e validação dos demais integrantes continuam pendentes, conforme seção 7.1 do PDF.
-O GitHub está publicado. O proprietário informou o link do painel Community Cloud; a validação funcional externa ainda precisa ser concluída.
+O GitHub e o painel estão publicados. O proprietário confirmou acesso anônimo, sem login, e funcionamento das três páginas.
 
 ## Integrantes e frentes propostas
 
@@ -179,7 +179,7 @@ Desafios técnicos: granularidade de itens/avaliações, ausência de despacho p
 Consultar `docs/apresentacao.md`, `docs/publicacao.md` e `docs/auditoria_rubrica.md`.
 
 Repositório público: [Projeto-Analise-Exploratoria-ciencia-de-dados](https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados). Nome: `Projeto-Analise-Exploratoria-ciencia-de-dados`.
-Painel Streamlit Community Cloud: [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). Link fornecido pelo proprietário; domínio respondeu HTTP 200, mas a validação funcional externa ainda está pendente.
+Painel Streamlit Community Cloud: [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O proprietário confirmou abertura sem login em janela anônima e funcionamento das três páginas.
 O CSV deve ficar abaixo de 100 MB. O pipeline verifica esse limite e não remove linhas para reduzi-lo.
 Antes de entregar: revisão da equipe, textos autorais, commits reais dos quatro integrantes, repositório público,
 painel acessível e envio do PDF e dos dois links pela plataforma A da disciplina.
@@ -192,3 +192,7 @@ painel acessível e envio do PDF e dos dois links pela plataforma A da disciplin
 Consultas de APIs de Pandas e Streamlit realizadas com Context7 em 17/11/2026.
 
 Atualização de publicação: repositório público sincronizado. O proprietário informou o painel https://wuevyectn67rbfng9xqssx.streamlit.app/ A consulta HTTP respondeu, mas retornou a interface de carregamento do serviço; indicadores, gráficos e filtros remotos ainda não foram confirmados por esta ferramenta.
+
+## Confirmação manual de publicação
+
+O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.
