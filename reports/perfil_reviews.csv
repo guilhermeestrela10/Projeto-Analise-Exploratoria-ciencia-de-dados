@@ -1,0 +1,8 @@
+,tipo_carregado,nulos,distintos
+review_id,string,0,98410
+order_id,string,0,98673
+review_score,string,0,5
+review_comment_title,string,87656,4527
+review_comment_message,string,58247,36159
+review_creation_date,string,0,636
+review_answer_timestamp,string,0,98248

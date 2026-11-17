@@ -1,0 +1,32 @@
+{
+  "low_variance": [],
+  "high_correlation": [
+    {
+      "a": "sales_value",
+      "b": "demo_sales_minmax",
+      "correlation": 0.9999999999999977
+    },
+    {
+      "a": "sales_value",
+      "b": "demo_sales_zscore",
+      "correlation": 0.9999999999999962
+    },
+    {
+      "a": "demo_sales_minmax",
+      "b": "demo_sales_zscore",
+      "correlation": 1.0000000000000036
+    }
+  ],
+  "selected_analysis": [
+    "item_count",
+    "sales_value",
+    "freight_value",
+    "approval_to_carrier_days",
+    "dispatch_delay_days",
+    "transport_days",
+    "delivery_days",
+    "review_score",
+    "freight_share"
+  ],
+  "rule": "Filtro semântico: retirar IDs, textos e transformações redundantes; variância <= 1e-12; correlação absoluta >= 0.95 para inspeção, sem excluir métricas gerenciais."
+}

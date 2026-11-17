@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pyc
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+kaggle.json
+data/raw/*.csv
+data/amostra_bruta/
+work/
+*.log

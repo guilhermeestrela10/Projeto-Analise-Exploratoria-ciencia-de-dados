@@ -1,0 +1,7 @@
+{
+  "rows": 100010,
+  "columns": 41,
+  "bytes": 38373468,
+  "sha256": "af2422c07a4ddc54be5e687704161c3ba85d3736a4dc6e09f587d8fba50f29c5",
+  "grain": "order_id + seller_id"
+}

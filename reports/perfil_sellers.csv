@@ -1,0 +1,5 @@
+,tipo_carregado,nulos,distintos
+seller_id,string,0,3095
+seller_zip_code_prefix,string,0,2246
+seller_city,string,0,611
+seller_state,string,0,23

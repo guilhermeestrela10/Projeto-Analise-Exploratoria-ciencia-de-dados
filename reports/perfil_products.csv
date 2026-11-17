@@ -1,0 +1,10 @@
+,tipo_carregado,nulos,distintos
+product_id,string,0,32951
+product_category_name,string,610,73
+product_name_lenght,string,610,66
+product_description_lenght,string,610,2960
+product_photos_qty,string,610,19
+product_weight_g,string,2,2204
+product_length_cm,string,2,99
+product_height_cm,string,2,102
+product_width_cm,string,2,95

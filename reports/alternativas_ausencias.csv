@@ -1,0 +1,6 @@
+tabela,unidade,preservar_linhas,excluir_qualquer_nulo_linhas_restantes,linhas_que_seriam_removidas
+orders,linha original,99441,96461,2980
+items,linha original,112650,112650,0
+products,linha original,32951,32340,611
+sellers,linha original,3095,3095,0
+reviews,linha original,99224,9839,89385
