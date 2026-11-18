@@ -81,3 +81,11 @@ Prazo: 30/11/2026, 23h59 de Brasília. Apresentação: 02/12/2026, até dez minu
 ## Complementação textual para revisão
 
 O PDF de 12 páginas possui conclusão, contextualização e oito justificativas técnicas preenchidas como rascunho IA. A identificação da assistência foi mantida. Os 34 testes passaram. Não se considera atendido o requisito de autoria humana apenas pelo preenchimento automático desses textos.
+
+## Revisão informada pelo solicitante em 18/11/2026
+
+O solicitante confirmou nesta conversa que ele e o grupo revisaram o relatório. A versão do PDF foi
+atualizada para refletir essa declaração, sem afirmar que a ferramenta acompanhou a revisão humana.
+As indicações de assistência de IA e os registros anteriores foram preservados. A declaração de revisão
+não equivale à aprovação da professora nem altera a origem dos textos ou comprova contribuições individuais.
+O registro está em reports/revisao_equipe.json.

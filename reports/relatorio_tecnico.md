@@ -10,7 +10,7 @@ Fonte: Olist Brazilian E-Commerce Public Dataset, Kaggle. Cinco arquivos foram o
 
 ## 3. Ciclo de vida CRISP-DM
 
-Compreensão do negócio: três perguntas do briefing. Compreensão dos dados: perfis, ausências, chaves e estatísticas. Preparação: limpeza, conversões, agregação e engenharia. A etapa de modelagem não inclui modelos de IA, classificação ou previsão, conforme proibição do trabalho. Avaliação: testes, recortes reais e comparação de alternativas. Entrega: CSV, notebook, painel e relatório; publicação e textos humanos ainda precisam ser finalizados.
+Compreensão do negócio: três perguntas do briefing. Compreensão dos dados: perfis, ausências, chaves e estatísticas. Preparação: limpeza, conversões, agregação e engenharia. A etapa de modelagem não inclui modelos de IA, classificação ou previsão, conforme proibição do trabalho. Avaliação: testes, recortes reais e comparação de alternativas. Entrega: CSV, notebook, painel, relatório e repositório público. O proprietário confirmou o acesso público ao painel e informou a revisão do relatório pelo grupo.
 
 ## 4. Exploração e qualidade
 

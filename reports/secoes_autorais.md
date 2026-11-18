@@ -1,10 +1,10 @@
 # Textos recebidos e complementos para estudo
 
-[RASCUNHO IA]
-As respostas e o sumário vieram do solicitante, com revisão factual autorizada. A conclusão técnica e a contextualização abaixo foram redigidas pela ferramenta nesta etapa. Não se presume autoria ou revisão dos integrantes.
+[TEXTO ASSISTIDO POR IA - REVISÃO INFORMADA]
+As respostas e o sumário vieram do solicitante, com revisão factual autorizada. A conclusão técnica e a contextualização abaixo foram redigidas pela ferramenta nesta etapa. Revisão do grupo informada pelo solicitante em 18/11/2026. A informação foi recebida nesta conversa, sem acompanhamento independente da revisão pela ferramenta. A origem assistida dos complementos permanece registrada.
 
 O solicitante enviou as três respostas e autorizou correções factuais e inclusão de números e vendedores.
-Os originais estão em respostas_recebidas.md. A revisão não comprova aprovação dos demais integrantes.
+Os originais estão em respostas_recebidas.md. Revisão do grupo informada pelo solicitante em 18/11/2026.
 
 ## Parte A - Sumário executivo (máximo de uma página)
 
@@ -26,7 +26,7 @@ Sim, observamos associação entre atraso no despacho e notas piores. Entre os p
 
 Propomos acompanhar três métricas: Taxa de Atraso de Despacho superior a 10%, nota média por pedido nos últimos 30 dias da base filtrada com piso de 3,8, e tempo médio entre aprovação e postagem em dias úteis. Cada pedido elegível com nota tem peso 1. A janela termina na última compra do recorte histórico; dias úteis consideram segunda a sexta, sem feriados. Ainda não definimos um limite para o tempo médio.
 
-## Conclusão técnica - rascunho assistido por IA
+## Conclusão técnica
 
 O projeto reuniu os cinco arquivos da Olist em uma tabela de 100.010 registros, com uma linha por pedido e vendedor observado. A agregação dos itens antes dos relacionamentos e a seleção de uma avaliação por pedido impediram que valores e notas fossem contados várias vezes. A comparação individual ficou restrita aos 94.955 pedidos elegíveis, dos quais 94.257 tinham nota válida.
 

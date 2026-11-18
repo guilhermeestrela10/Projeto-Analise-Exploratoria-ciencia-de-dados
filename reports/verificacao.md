@@ -1,3 +1,13 @@
+## Revisão informada pelo solicitante em 18/11/2026
+
+O solicitante confirmou nesta conversa que ele e o grupo revisaram o relatório. A versão do PDF foi
+atualizada para refletir essa declaração, sem afirmar que a ferramenta acompanhou a revisão humana.
+As indicações de assistência de IA e os registros anteriores foram preservados. A declaração de revisão
+não equivale à aprovação da professora nem altera a origem dos textos ou comprova contribuições individuais.
+O registro está em reports/revisao_equipe.json.
+
+---
+
 # Complementação dos textos como rascunho IA - 17/11/2026
 
 - Por solicitação do usuário, o documento recebeu texto completo para conclusão técnica, contextualização e oito justificativas.

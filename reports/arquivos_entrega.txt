@@ -53,6 +53,7 @@ reports/pytest.txt
 reports/relatorio_final.pdf
 reports/relatorio_tecnico.md
 reports/respostas_recebidas.md
+reports/revisao_equipe.json
 reports/secoes_autorais.md
 reports/selecao_atributos.json
 reports/serie_mensal.csv

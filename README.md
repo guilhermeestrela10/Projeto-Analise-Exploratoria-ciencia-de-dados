@@ -3,10 +3,10 @@
 Centro Universitário Santo Agostinho (UNIFSA) - Bacharelado em Engenharia de Software.
 Disciplina: Ciência de Dados. Professora: Heloisa Guimarães. Grupo 04, Briefing 5: Gestão de Vendedores Parceiros.
 
-**Versão completa para revisão:** implementação e evidências técnicas assistidas por IA. Sumário e respostas
-vieram do solicitante, com revisão factual autorizada. Justificativas, conclusão e contextualização foram
-completadas como rascunho IA. A autoria humana exigida na seção 7.1 do PDF e a validação dos integrantes
-continuam pendentes; textos preenchidos não equivalem a entrega acadêmica aprovada.
+**Versão revisada conforme declaração do solicitante em 18/11/2026:** o solicitante informou que ele e o grupo revisaram o relatório.
+Sumário e respostas vieram do solicitante, com revisão factual autorizada. Implementação e complementos
+receberam assistência de IA, cuja origem permanece registrada. A revisão informada não constitui
+aprovação da professora nem altera as exigências de autoria do documento da disciplina.
 O GitHub e o painel estão publicados. O proprietário confirmou acesso anônimo, sem login, e funcionamento das três páginas.
 
 ## Integrantes e frentes propostas

@@ -53,3 +53,11 @@ Referências verificadas: [GitHub CLI - criar repositório](https://cli.github.c
 ## Link do painel informado pelo proprietário
 
 [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O proprietário confirmou nesta conversa que o painel abre em janela anônima, sem login, e que as três páginas funcionam. Essa é uma confirmação manual do proprietário; não representa inspeção visual independente da ferramenta nem teste manual de todos os filtros.
+
+## Revisão informada pelo solicitante em 18/11/2026
+
+O solicitante confirmou nesta conversa que ele e o grupo revisaram o relatório. A versão do PDF foi
+atualizada para refletir essa declaração, sem afirmar que a ferramenta acompanhou a revisão humana.
+As indicações de assistência de IA e os registros anteriores foram preservados. A declaração de revisão
+não equivale à aprovação da professora nem altera a origem dos textos ou comprova contribuições individuais.
+O registro está em reports/revisao_equipe.json.

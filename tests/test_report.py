@@ -6,7 +6,7 @@ from src.load_data import ROOT
 import hashlib
 
 
-def test_report_has_required_parts_and_draft_status():
+def test_report_has_required_parts_and_review_provenance():
     result = subprocess.run([sys.executable, str(ROOT / 'scripts/gerar_relatorio.py')], cwd=ROOT, capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
     pdf = PdfReader(ROOT / 'reports/relatorio_final.pdf')
@@ -14,7 +14,9 @@ def test_report_has_required_parts_and_draft_status():
     assert 'Parte A - Sumário executivo' in text
     assert 'Parte B - Relatório técnico' in text
     assert 'Parte C - Diário de decisões' in text
-    assert 'AUTORAIS PENDENTES' in text
+    normalized = ' '.join(text.split())
+    assert 'Revisão do grupo informada pelo solicitante' in normalized
+    assert 'Registro de IA: uso_de_ia.md' in normalized
 
 
 def test_unchanged_inputs_generate_identical_pdf():

@@ -85,8 +85,8 @@ def main():
     paragraph('Professora: Heloisa Guimarães | Grupo 04 | Briefing 5')
     paragraph('Guilherme Estrela · David Gabriel · Carlos Gabriel Raposo · Roger')
     story.append(Spacer(1, 24))
-    paragraph('RASCUNHO TÉCNICO - PARTES AUTORAIS PENDENTES', 'Heading2')
-    paragraph('Implementação e evidências técnicas assistidas por IA. As respostas e o sumário vieram do solicitante, com revisão factual autorizada. As justificativas, conclusão técnica e contextualização foram completadas pela ferramenta a pedido do solicitante e estão identificadas como rascunho IA. Não se afirma autoria ou validação desses complementos pelos integrantes. A versão não comprova o atendimento às partes de autoria humana exigidas na seção 7.1 do documento da disciplina.')
+    paragraph('RELATÓRIO TÉCNICO - VERSÃO REVISADA', 'Heading2')
+    paragraph('Revisão do grupo informada pelo solicitante em 18/11/2026. As respostas e o sumário vieram do solicitante, com revisão factual autorizada. A implementação, evidências e complementos técnicos receberam assistência de IA, documentada em uso_de_ia.md. A revisão informada não altera essa origem nem constitui aprovação da professora.')
     paragraph('Referência: TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
     story.append(PageBreak())
     paragraph('Parte A - Sumário executivo', 'Heading1')
@@ -95,14 +95,14 @@ def main():
     executive = author_text.split('## Parte A - Sumário executivo (máximo de uma página)', 1)[-1].split('## Resposta 1', 1)[0].strip()
     for block in (executive or '[Equipe preencher o sumário executivo.]').split('\n\n'):
         paragraph(block)
-    paragraph('Texto integrado a partir das respostas recebidas. A validação dos demais integrantes permanece pendente.')
+    paragraph('Texto integrado a partir das respostas recebidas. Revisão do grupo informada pelo solicitante em 18/11/2026.')
     story.append(PageBreak())
     paragraph('Parte B - Relatório técnico', 'Heading1')
     section('1. Problema e recorte', 'O Briefing 5 trata de gestão de vendedores parceiros: identificar atrasos de despacho, investigar a associação com avaliações e apoiar a discussão de critérios objetivos. A data de transportadora existe no nível do pedido. A análise individual usa pedidos com um único vendedor observado; isso não comprova responsabilidade e depende da cobertura dos itens recebidos. A contextualização complementar e as referências consultadas pela ferramenta aparecem na seção 12, sem atribuição de pesquisa aos integrantes.')
     section('2. Dados e relacionamentos', 'Fonte: Olist Brazilian E-Commerce Public Dataset, Kaggle. Cinco arquivos foram obtidos da fonte pública; hashes de cada original estão registrados em data/raw/proveniencia.json. Geolocalização não foi extraída nem utilizada. IDs de clientes e textos livres de avaliações não são incluídos na tabela final.')
     table([['Tabela', 'Linhas brutas', 'Colunas', 'Duplicatas exatas']] + [[k, v['rows'], v['columns'], v['duplicates']] for k, v in audit['before'].items()], [170, 105, 95, 113])
     paragraph('Itens -> produtos: N:1; itens agregados -> contagens por pedido: N:1; grupos -> pedidos: N:1; grupos -> vendedores: N:1; grupos -> avaliação única: N:1. Todas essas relações são validadas no código. A chave final é order_id + seller_id.')
-    section('3. Ciclo de vida CRISP-DM', 'Compreensão do negócio: três perguntas do briefing. Compreensão dos dados: perfis, ausências, chaves e estatísticas. Preparação: limpeza, conversões, agregação e engenharia. A etapa de modelagem não inclui modelos de IA, classificação ou previsão, conforme proibição do trabalho. Avaliação: testes, recortes reais e comparação de alternativas. Entrega: CSV, notebook, painel e relatório; publicação e textos humanos ainda precisam ser finalizados.')
+    section('3. Ciclo de vida CRISP-DM', 'Compreensão do negócio: três perguntas do briefing. Compreensão dos dados: perfis, ausências, chaves e estatísticas. Preparação: limpeza, conversões, agregação e engenharia. A etapa de modelagem não inclui modelos de IA, classificação ou previsão, conforme proibição do trabalho. Avaliação: testes, recortes reais e comparação de alternativas. Entrega: CSV, notebook, painel, relatório e repositório público. O proprietário confirmou o acesso público ao painel e informou a revisão do relatório pelo grupo.')
     section('4. Exploração e qualidade', f'Foram observados {audit["orders_without_items"]} pedidos sem itens correspondentes, que não geram linha pedido-vendedor; {audit["reviews_reduced"]} avaliações excedentes foram reduzidas a uma por pedido; {audit["multi_seller_orders"]} pedidos possuem mais de um vendedor observado. Há {audit["invalid_chronology_pairs"]} pares pedido-vendedor com alguma contradição temporal sinalizada. Cada duração possui sua própria máscara de validade; uma entrega ao cliente inconsistente não invalida automaticamente uma medição de despacho que seja coerente.')
     null_rows = [['Coluna de pedidos', 'Ausências originais']] + [[c, v] for c, v in audit['before']['orders']['nulls'].items() if v]
     if len(null_rows) > 1:
@@ -133,7 +133,7 @@ def main():
     markdown('## Resposta 1' + author_text.split('## Resposta 1', 1)[-1] if '## Resposta 1' in author_text else author_text)
     story.append(PageBreak())
     paragraph('Parte C - Diário de decisões', 'Heading1')
-    paragraph('Rascunho de justificativas produzido por IA para estudo. Não substitui a autoria humana exigida no Anexo B e na seção 7.1.')
+    paragraph('Justificativas técnicas assistidas por IA, com revisão do relatório informada pelo solicitante em 18/11/2026. A origem dos textos permanece registrada em uso_de_ia.md.')
     markdown((REPORTS / 'diario_de_decisoes.md').read_text(encoding='utf-8'))
     heading('Referências e transparência')
     paragraph('Olist: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Documentação técnica: pandas.pydata.org, scikit-learn.org e docs.streamlit.io. Documento da disciplina: TRABALHO CIENCIA DE DADOS.pdf, fornecido localmente. Registro de IA: uso_de_ia.md, com revisão técnica automatizada realizada.')
@@ -150,7 +150,7 @@ def main():
     SimpleDocTemplate(str(pdf), pagesize=A4, rightMargin=50, leftMargin=50, topMargin=48, bottomMargin=55, invariant=1,
         title='Grupo 04 - Gestão de Vendedores Parceiros', author='Grupo 04 - conteúdo técnico assistido por IA').build(story, onFirstPage=footer, onLaterPages=footer)
     (REPORTS / 'relatorio_tecnico.md').write_text('# Parte B - Conteúdo técnico automático\n\n' + '\n'.join(technical), encoding='utf-8')
-    print(f'PDF técnico gerado: {pdf.name}. Campos autorais permanecem pendentes.')
+    print(f'PDF técnico gerado: {pdf.name}. Revisão do grupo registrada conforme declaração do solicitante.')
 
 
 if __name__ == '__main__':
