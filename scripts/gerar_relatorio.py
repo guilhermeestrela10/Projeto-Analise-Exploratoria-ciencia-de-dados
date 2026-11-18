@@ -87,7 +87,7 @@ def main():
     story.append(Spacer(1, 24))
     paragraph('RASCUNHO TÉCNICO - PARTES AUTORAIS PENDENTES', 'Heading2')
     paragraph('Implementação e evidências técnicas assistidas por IA. As respostas e o sumário vieram do solicitante, com revisão factual autorizada. As justificativas, conclusão técnica e contextualização foram completadas pela ferramenta a pedido do solicitante e estão identificadas como rascunho IA. Não se afirma autoria ou validação desses complementos pelos integrantes. A versão não comprova o atendimento às partes de autoria humana exigidas na seção 7.1 do documento da disciplina.')
-    paragraph('Referência: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
+    paragraph('Referência: TRABALHO CIENCIA DE DADOS.pdf, 12 páginas. Implementação iniciada em 17/11/2026. Prazo: 30/11/2026 às 23h59 de Brasília. Apresentação: 02/12/2026.')
     story.append(PageBreak())
     paragraph('Parte A - Sumário executivo', 'Heading1')
     paragraph('Texto fornecido pelo solicitante; revisão factual autorizada.', 'Heading2')
@@ -136,7 +136,7 @@ def main():
     paragraph('Rascunho de justificativas produzido por IA para estudo. Não substitui a autoria humana exigida no Anexo B e na seção 7.1.')
     markdown((REPORTS / 'diario_de_decisoes.md').read_text(encoding='utf-8'))
     heading('Referências e transparência')
-    paragraph('Olist: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Documentação técnica: pandas.pydata.org, scikit-learn.org e docs.streamlit.io. Documento da disciplina: FINAL BOSS - TRABALHO CIENCIA DE DADOS.pdf, fornecido localmente. Registro de IA: uso_de_ia.md, com revisão humana ainda pendente.')
+    paragraph('Olist: https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce. Documentação técnica: pandas.pydata.org, scikit-learn.org e docs.streamlit.io. Documento da disciplina: TRABALHO CIENCIA DE DADOS.pdf, fornecido localmente. Registro de IA: uso_de_ia.md, com revisão técnica automatizada realizada.')
     pdf = REPORTS / 'relatorio_final.pdf'
 
     def footer(canvas, doc):
