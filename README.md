@@ -9,14 +9,17 @@ receberam assistência de IA, cuja origem permanece registrada. A revisão infor
 aprovação da professora nem altera as exigências de autoria do documento da disciplina.
 O GitHub e o painel estão publicados. O proprietário confirmou acesso anônimo, sem login, e funcionamento das três páginas.
 
-## Integrantes e frentes propostas
+## Integrantes e responsabilidades
 
-| Integrante | Responsabilidade principal proposta; confirmar com a equipe |
+| Integrante | Responsabilidade informada nesta conversa |
 |---|---|
-| Guilherme Estrela | Limpeza, tratamento e diário de decisões |
-| David Gabriel | Transformações e feature engineering |
-| Carlos Gabriel Raposo | Pipeline e reprodutibilidade |
-| Roger | Streamlit e comunicação dos resultados |
+| Guilherme Estrela | Etapa 7: Streamlit. Etapa 8: documentação, apresentação e verificação integrada |
+| David Gabriel | Distribuição das etapas 1 a 6 a alinhar com o líder |
+| Carlos Gabriel Raposo | Distribuição das etapas 1 a 6 a alinhar com o líder |
+| Roger | Distribuição das etapas 1 a 6 a alinhar com o líder |
+
+Entrega específica de Guilherme: [etapas 7 e 8](docs/entrega_etapas_7_8.md).
+O projeto integrado inclui as dependências das etapas anteriores; isso não atribui sua execução a Guilherme.
 
 Todos devem compreender o projeto e fazer contribuições e commits reais. Commits com código assistido devem incluir `[IA]`.
 
@@ -172,18 +175,18 @@ Para conferir os campos autorais ainda vazios, execute:
 
 Esse comando aponta pendências textuais e retorna código 1 enquanto existirem campos não preenchidos.
 Ele não comprova autoria, aprovação humana ou publicação. O detalhamento da segunda revisão está em `docs/revisao_final.md`.
-O workflow GitHub Actions executa testes a cada push. A execução remota documentada aprovou 33 testes; resultado em `reports/verificacao.md`.
+O workflow GitHub Actions executa testes a cada push. Os resultados e suas datas estão em `reports/verificacao.md`.
 As próximas alterações feitas pelo assistente devem seguir o fluxo testar, revisar, commit e push registrado em AGENTS.md.
 
-As três respostas foram fornecidas pelo solicitante e receberam revisão factual expressamente autorizada. Os originais estão em `reports/respostas_recebidas.md`; os textos integrados estão no painel e na Parte A. As justificativas, conclusão e contextualização agora possuem texto completo identificado como rascunho IA. A validação da equipe e o atendimento às exigências de autoria continuam pendentes.
+As três respostas foram fornecidas pelo solicitante e receberam revisão factual expressamente autorizada. Os originais estão em `reports/respostas_recebidas.md`; os textos integrados estão no painel e na Parte A. O solicitante informou em 18/11/2026 que ele e o grupo revisaram o relatório. Os complementos assistidos e a declaração de revisão permanecem registrados em `uso_de_ia.md` e `reports/revisao_equipe.json`.
 Desafios técnicos: granularidade de itens/avaliações, ausência de despacho por vendedor, múltiplas avaliações, cronologias contraditórias e amostras incompletas.
 Consultar `docs/apresentacao.md`, `docs/publicacao.md` e `docs/auditoria_rubrica.md`.
 
 Repositório público: [Projeto-Analise-Exploratoria-ciencia-de-dados](https://github.com/guilhermeestrela10/Projeto-Analise-Exploratoria-ciencia-de-dados). Nome: `Projeto-Analise-Exploratoria-ciencia-de-dados`.
 Painel Streamlit Community Cloud: [Abrir painel](https://wuevyectn67rbfng9xqssx.streamlit.app/). O proprietário confirmou abertura sem login em janela anônima e funcionamento das três páginas.
 O CSV deve ficar abaixo de 100 MB. O pipeline verifica esse limite e não remove linhas para reduzi-lo.
-Antes de entregar: revisão da equipe, textos autorais, commits reais dos quatro integrantes, repositório público,
-painel acessível e envio do PDF e dos dois links pela plataforma A da disciplina.
+Para o envio do grupo: conferir a versão consolidada, as contribuições reais dos integrantes e enviar o PDF
+e os links do GitHub e do painel pela plataforma A da disciplina. Consultar o roteiro em `docs/apresentacao.md`.
 
 ## Referências técnicas consultadas
 

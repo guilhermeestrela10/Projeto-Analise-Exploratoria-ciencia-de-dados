@@ -10,6 +10,7 @@ data/processed/metadados.json
 data/processed/tabela_analitica.csv
 data/raw/proveniencia.json
 docs/apresentacao.md
+docs/entrega_etapas_7_8.md
 docs/auditoria_rubrica.md
 docs/plano.md
 docs/publicacao.md

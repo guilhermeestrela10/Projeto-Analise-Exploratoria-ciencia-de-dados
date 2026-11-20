@@ -27,7 +27,8 @@ def main():
         parser.exit(1, f'Pipeline não concluído: {error}\n')
     print(f'CSV gerado: {metadata["rows"]} linhas, {metadata["columns"]} colunas, {metadata["bytes"]} bytes.')
     print(f'Pedidos elegíveis: {d.eligible_dispatch.sum()}. Tempo: {time.perf_counter()-started:.1f} s.')
-    print('Evidências técnicas geradas. Conclusões e justificativas humanas continuam pendentes.')
+    # [IA] registro 8: o pipeline não determina o estado da revisão autoral.
+    print('Evidências técnicas geradas. Textos autorais existentes preservados; consulte a revisão da entrega no README.')
 
 
 if __name__ == '__main__':

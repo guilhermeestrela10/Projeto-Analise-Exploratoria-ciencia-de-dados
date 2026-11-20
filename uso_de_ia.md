@@ -2,7 +2,8 @@
 
 Data desta implementação: 17/11/2026. Ferramenta: Codex, nesta conversa.
 Os registros descrevem assistência automática solicitada; não comprovam revisão nem participação dos demais integrantes.
-O usuário deve confirmar sua identificação como integrante solicitante e fornecer o link compartilhável da conversa, se disponível.
+O solicitante confirmou o nome Guilherme Estrela em 20/11/2026. As identificações genéricas nas linhas antigas representam o registro histórico.
+O link compartilhável da conversa depende de disponibilidade no cliente utilizado.
 
 | Nº | Data | Integrante | Ferramenta | Etapa e o que foi pedido | O que foi aproveitado | O que a equipe alterou ou verificou | Link da conversa |
 |---|---|---|---|---|---|---|---|
@@ -13,10 +14,11 @@ O usuário deve confirmar sua identificação como integrante solicitante e forn
 | 5 | 17/11/2026 | Solicitante desta conversa | Codex | Integrar três respostas fornecidas, corrigir afirmações e implementar critérios definidos pelo solicitante | Textos originais preservados em reports/respostas_recebidas.md; revisão factual autorizada; limites TAD 10%, nota 3,8, janela de 30 dias e dias úteis sem feriados | O solicitante autorizou expressamente as correções factuais e as definições da janela e pesos; não confirmou revisão de todo o código nem justificativas reais do grupo | Pendente |
 | 6 | 17/11/2026 | Solicitante desta conversa | Codex | Completar os textos restantes para estudo e revisão | Rascunhos de oito justificativas, conclusão técnica e contextualização; PDF completo para revisão; verificador reconhece o marcador RASCUNHO IA | Conteúdo verificado contra evidências existentes; não se presume autoria humana, reunião do grupo ou aprovação dos integrantes; a regra da seção 7.1 continua sendo uma pendência acadêmica | Pendente |
 | 7 | 18/11/2026 | Solicitante desta conversa | Codex | Registrar revisão informada pelo solicitante e pelo grupo, ajustar referências e gerar a versão revisada | Avisos de revisão pendente atualizados; declaração em reports/revisao_equipe.json; origem assistida dos textos preservada | O solicitante informou que ele e o grupo revisaram o relatório; a ferramenta não acompanhou essa revisão nem declara aprovação da professora | Pendente |
+| 8 | 20/11/2026 | Guilherme Estrela | Codex | Organizar a entrega das etapas 7 e 8 após a divisão do líder | Guia de entrega, atualização de responsáveis no README, roteiro de demonstração e verificações do painel e pipeline existentes | Nome e atribuição confirmados pelo solicitante; resultados automáticos em reports/verificacao.md; não foram inventadas contribuições dos colegas | Indisponível nesta entrega |
 
 ## Limites de autoria
 O PDF, seção 7.1, proíbe IA nas justificativas do diário, sumário executivo, respostas de negócio e conclusões.
-As respostas de negócio foram fornecidas pelo solicitante e receberam revisão factual autorizada, registrada na linha 5. Justificativas do diário, conclusão técnica e pesquisas continuam pendentes. Não se presume concordância dos demais integrantes. Evidências e descrições técnicas automáticas estão identificadas.
+As respostas de negócio foram fornecidas pelo solicitante e receberam revisão factual autorizada, registrada na linha 5. A revisão do grupo foi informada pelo solicitante em 18/11/2026, conforme linha 7. Isso não altera a origem assistida dos complementos nem comprova atendimento às exigências de autoria da disciplina. Evidências e descrições técnicas automáticas estão identificadas.
 
 Atualização do registro 6: os textos das justificativas, conclusão e contextualização foram completados como rascunho IA, sem campos vazios no documento. Isso não comprova a autoria humana exigida no PDF; a equipe precisa elaborar e validar as partes que lhe cabem. As referências técnicas não foram atribuídas a pesquisas realizadas pelos integrantes.
 As regras de limpeza e métricas implementadas são propostas técnicas da ferramenta, ainda sujeitas à avaliação dos integrantes.

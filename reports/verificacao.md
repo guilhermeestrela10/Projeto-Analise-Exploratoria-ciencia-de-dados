@@ -1,3 +1,29 @@
+## Entrega das etapas 7 e 8 - 20/11/2026
+
+Responsável informado: Guilherme Estrela. Guia em `docs/entrega_etapas_7_8.md`.
+Reaproveitado o painel integrado, sem alterar suas métricas ou reatribuir as etapas anteriores.
+Atualizados README, roteiro de apresentação e registro de assistência. Corrigida mensagem fixa do CLI
+que declarava pendência autoral sem consultar o estado da revisão; o pipeline não avalia autoria.
+
+Verificações executadas nesta sessão, Windows/Python 3.11:
+
+- `.venv/Scripts/python.exe -m pytest -q`: **34 passed in 47.28s**.
+  Inclui quatro páginas, filtro de UF, período, recorte vazio e integração com dados brutos.
+- Após a alteração da mensagem do CLI, `-m pytest tests/test_pipeline.py -q`: **3 passed in 15.57s**.
+- `scripts/executar_pipeline.py --input work/amostra_bruta --output work/entrega_7_8 --sem-graficos`:
+  sucesso; **49 linhas, 41 colunas, 19.416 bytes, 47 despachos elegíveis**, última execução em **1,0 s**.
+  A entrada contém 50 pedidos reais e registros relacionados. A saída é separada da base do painel.
+- `pip check`: **No broken requirements found**.
+- `compileall -q src scripts pages app.py tests`: sem erros; script do CLI recompilado após a mensagem.
+- PDF existente conferido: **12 páginas**, nome Guilherme Estrela presente, referência “FINAL BOSS” ausente.
+  Todas as páginas renderizadas com Poppler e inspecionadas em imagem de contato; sem cortes ou sobreposição observados.
+- GitHub Actions do commit anterior `4aa1972cea1bfbc49472b356d283db893768f4b6`: concluído com sucesso,
+  execução `44292660824`. Isso não é o resultado remoto do novo commit desta entrega.
+
+O painel remoto não foi inspecionado visualmente nesta sessão; mantém-se a confirmação anterior do proprietário.
+O líder deve reconciliar os arquivos se os colegas substituírem a base das etapas 1 a 6.
+As seções seguintes preservam o histórico das revisões anteriores e suas datas.
+
 ## Revisão informada pelo solicitante em 18/11/2026
 
 O solicitante confirmou nesta conversa que ele e o grupo revisaram o relatório. A versão do PDF foi
